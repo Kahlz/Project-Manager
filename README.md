@@ -2,6 +2,9 @@
 
 This is a project manager. You can add, delete, and edit project. Base on python library : PrettyTable
 
+## Example
+<p align="center"> <img src="https://github.com/Kahlz/Project-Manager/blob/main/Example.png" alt="Example PNG"/></p>
+
 ## Features
 
 - Add, Delete, Edit Project.
