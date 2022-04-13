@@ -7,7 +7,7 @@ This is a project manager. You can add, delete, and edit project. Base on python
 
 ## Features
 
-- Add, Delete, Edit Project.
+- Add, Delete, Edit, Sort Project.
 - Easy To Use.
 - Works with python.
 
