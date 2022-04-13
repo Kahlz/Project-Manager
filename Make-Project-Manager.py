@@ -9,7 +9,7 @@ project.field_names = ["Project Name", "Status", "Language", "About"]
 project.add_autoindex("No.")
 
 print("""This is a project manager.
-You can add, delete, and edit project.""")
+You can add, delete, edit, and sort project.""")
 sleep(1)
 while True:
     try:
