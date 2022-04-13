@@ -17,7 +17,8 @@ while True:
 1. Add project
 2. Delete project
 3. Edit project
-4. Exit
+4. Sort project
+5. Exit
 """)
         choice = int(input("Enter your choice: "))
         if choice == 1:
@@ -68,6 +69,50 @@ while True:
             sleep(1)
             os.system('cls' if os.name == 'nt' else 'clear')
         elif choice == 4:
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print("Sort project")
+            print(project)
+            project.add_autoindex("No.")
+            print("""
+1. Sort by project name
+2. Sort by status
+3. Sort by language
+4. Sort by about
+""")
+            project.del_column("No.")
+            sort_project = input("Sort by: ")
+            if sort_project == "1":
+                project.sortby = "Project Name"
+                print("Sorting project...")
+                sleep(0.5)
+                print("Project sorted")
+                sleep(1)
+                os.system('cls' if os.name == 'nt' else 'clear')
+            elif sort_project == "2":
+                project.sortby = "Status"
+                print("Sorting project...")
+                sleep(0.5)
+                print("Project sorted")
+                sleep(1)
+                os.system('cls' if os.name == 'nt' else 'clear')
+            elif sort_project == "3":
+                project.sortby = "Language"
+                print("Sorting project...")
+                sleep(0.5)
+                print("Project sorted")
+                sleep(1)
+                os.system('cls' if os.name == 'nt' else 'clear')
+            elif sort_project == "4":
+                project.sortby = "About"
+                print("Sorting project...")
+                sleep(0.5)
+                print("Project sorted")
+                sleep(1)
+                os.system('cls' if os.name == 'nt' else 'clear')
+            else:
+                print("Wrong choice")
+                os.system('cls' if os.name == 'nt' else 'clear')
+        elif choice == 5:
             print("Exit")
             raw = project.get_string()
             data = [tuple(filter(None, map(str.strip, splitline)))
